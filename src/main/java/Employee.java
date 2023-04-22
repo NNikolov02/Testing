@@ -27,12 +27,18 @@ public class Employee extends People {
 
     public double calculateOvertime(double hours) {
         double overtime = (daySalary / 8) * 1.5;
-        double sum =(hours - 8) * (daySalary * 1.5);
-        if (super.age < 18) {
+        double sum = 0.0;
+        if (super.age <= 18) {
             return 0;
+
+
+
+
+
+
         }
-        if(hours > 8){
-            return sum;
+        for(double i = 8;i< hours;i++){
+            sum += overtime;
         }
         return sum;
     }

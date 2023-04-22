@@ -8,6 +8,8 @@ public class main {
         Calculator calculator = new Calculator();
         System.out.println(calculator.add(5, 4));
         StringHelper word = new StringHelper();
+
+
         ArrayList<People> people = new ArrayList<>();
         people.add(new Student("Ivan",14,true,3));
         people.add(new Student("Georgi",15,true,5));
@@ -28,6 +30,7 @@ public class main {
             } else if (person instanceof Employee) {
                 Employee employee = (Employee) person;
                 employee.toString();
+                System.out.println("Overtime:" + employee.calculateOvertime(12) );
             }
 
             System.out.println("--------------------");
