@@ -9,13 +9,7 @@ public class StringHelper {
 
 
     }
-    public String Reversed1(String a){
-        String b = "";
-        for(int i = a.length() - 1;i >= 0;i--){
-            b+= a.charAt(i);
-        }
-        return b;
-    }
+
     public void Dublicate(String a){
         for(int i = 0;i <=a.length()-2;i++){
             if(a.charAt(i) == a.charAt(i)){

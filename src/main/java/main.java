@@ -14,7 +14,7 @@ public class main {
         people.add(new Student("Ivan",14,true,3));
         people.add(new Student("Georgi",15,true,5));
         people.add(new Student("Ivana",16,false,6));
-        people.add(new Employee("Stamat",30,true,80.0));
+        people.add(new Employee("Radostin",30,true,80.0));
         people.add(new Employee("Velizar",28,true,70.5));
         people.add(new Employee("Maria",25,false,60.0));
         people.add(new People("Nikola",20,true));

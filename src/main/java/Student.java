@@ -17,6 +17,7 @@ public class Student extends People{
         super(name,age,isMale);
         this.score = score;
     }
+
     @Override
 
     public String toString(){
