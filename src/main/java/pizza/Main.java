@@ -7,6 +7,10 @@ public class Main {
         pizza = new Salami(pizza);
         System.out.println(pizza.getDescription());
         System.out.println(pizza.getCost());
+        pizza = new Souce(pizza);
+        System.out.println(pizza.getCost());
+        System.out.println(pizza.getDescription());
+
 
 
     }

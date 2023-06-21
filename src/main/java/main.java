@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-        Calculator calculator = new Calculator();
-        System.out.println(calculator.add(5, 4));
-        StringHelper word = new StringHelper();
+
+
+
 
 
         ArrayList<People> people = new ArrayList<>();
@@ -36,24 +37,22 @@ public class main {
             System.out.println("--------------------");
         }
 
+        int size = input.nextInt();
+        int [] array = new int[size];
+        int n = 0;
+        int avg;
 
+        for(int i = 0 ;i < size;i++){
+            array[i] = input.nextInt();
+        }
+        for(int i = 0 ;i < size;i++){
+            n += (array[i]);
 
+        }
+        avg = n/size;
 
+        System.out.println(avg);
 
-
-
-
-
-
-
-        Employee employee = new Employee("Ivan",30,true,80.0);
-        employee.calculateOvertime(12);
-
-
-
-
-        System.out.println(word.capitalizeFirst("letter"));
-        System.out.println(word.isPalindrome("racecar"));
 
 
 

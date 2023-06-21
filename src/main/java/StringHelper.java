@@ -18,16 +18,14 @@ public class StringHelper {
         }
 
     }
-    public boolean isPalindrome(String a){
-        String b = "";
-        for(int i = a.length() -1;i >=0;i--){
-            b += a.charAt(i);
-
-        }
-        if(a.equals(b)){
-            return true;
-        }
-        return false;
+    public boolean Palindrome(String a){
+       for(int i = 0 ; i< a.length() /2;i++){
+           if(a.charAt(i) != a.charAt(a.length() -1 -i)){
+               return false;
+           }
+       }
+       return true;
     }
+
 
 }
